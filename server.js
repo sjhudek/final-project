@@ -71,6 +71,7 @@ app.post('/search', function (req, res) {
                         var workArr = Array.from(reqQueryAsObj.results);
 
                         workArr.forEach(function (element) {
+                            console.log(element)
                             var googleLoc = googleStuff.processGoogleData(element);
 
                             top20.push(googleLoc);
